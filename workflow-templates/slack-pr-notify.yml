@@ -1,0 +1,8 @@
+name: Slack PR Notify
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+jobs:
+  notify:
+    uses: progressionlive/actions/.github/workflows/slack-pr-notify.yml@master
+    secrets: inherit

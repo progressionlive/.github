@@ -1,0 +1,6 @@
+{
+  "name": "Slack PR Notify",
+  "description": "Posts a Slack notification to #code-reviews when a non-draft PR is opened or marked ready for review.",
+  "iconName": "slack",
+  "categories": ["Automation"]
+}
