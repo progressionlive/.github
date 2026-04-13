@@ -4,5 +4,12 @@ on:
     types: [opened, ready_for_review]
 jobs:
   notify:
+    if: >-
+      github.event.pull_request.draft == false &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: read
+      pull-requests: read
     uses: progressionlive/actions/.github/workflows/slack-pr-notify.yml@master
-    secrets: inherit
+    secrets:
+      SLACK_CLI_TOKEN: ${{ secrets.SLACK_CLI_TOKEN }}
