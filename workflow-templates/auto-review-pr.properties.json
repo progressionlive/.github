@@ -1,0 +1,6 @@
+{
+  "name": "Auto Review PR",
+  "description": "Automatically requests reviewers and posts a review when a non-draft PR is opened, updated, or marked ready for review.",
+  "iconName": "code",
+  "categories": ["Automation"]
+}
