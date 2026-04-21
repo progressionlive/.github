@@ -11,6 +11,4 @@ jobs:
       contents: read
       pull-requests: read
     uses: progressionlive/actions/.github/workflows/auto-review-pr.yml@master
-    secrets:
-      COPILOT_PAT: ${{ secrets.COPILOT_PAT }}
-      COPILOT_CLI_BOT: ${{ secrets.COPILOT_CLI_BOT }}
+    secrets: inherit
