@@ -9,6 +9,7 @@ Templates available when creating new workflows via **Actions → New workflow**
 | Template | Description |
 |----------|-------------|
 | `slack-pr-notify` | Posts a Slack notification to `#code-reviews` when a non-draft PR is opened or marked ready |
+| `auto-review-pr` | Automatically requests reviewers and posts a review when a non-draft PR is opened, updated, or marked ready for review |
 
 ## Community Health Files
 
